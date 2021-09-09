@@ -2,7 +2,7 @@
 ===========
 
 =======
-# This is a **work in progress** fork, check back later. When this text is removed, it is ready for use.
+# This is a **work in progress** fork of a fork, check back later. When this text is removed, it is ready for use.
 
 ## Simple setup
 Define this in the vimrc runtime stream prior to plugin loading (plugins run after vimrc by default)
@@ -14,7 +14,8 @@ let g:colemak_dhm_mappings = {
 \        'right': {'dhm': 'i', 'original': 'l'},
 \        'down': {'dhm': 'n', 'original': 'j'},
 \        'up': {'dhm': 'e', 'original': 'k'},
-\        'insert': {'dhm': 'l', 'original': 'i'},
+\        'insert': {'dhm': 'u', 'original': 'i'},
+\        'undo': {'dhm': 'l', 'original': 'u'},
 \        'next': {'dhm': 'h', 'original': 'n'},
 \        'previous': {'dhm': 'H', 'original': 'N'},
 \        'mark': {'dhm': 'k', 'original': 'm'},
