@@ -25,8 +25,9 @@ let g:colemak_dhm_mappings = {
 \}
 
 " Tells the plugin to map once it loads
-" Using system command to check if specific colemak keyboard is plugged in
-let g:colemak_dhm_automap = system("lsusb | grep -c 'ErgoDox'")
+" Using system command to check if colemak layout is present.
+" TODO: check if variant is colemak.
+let g:colemak_dhm_automap = system("setxkbmap -query | grep -c variant")
 
 " Need to define these so mappings in downstream vimrc can map
 let bind_to = g:colemak_dhm_automap ? 'dhm' : 'original'
