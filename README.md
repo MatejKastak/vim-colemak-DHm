@@ -1,8 +1,6 @@
-[vim colemak DHm](vim-colemak-DHm)
-===========
+#vim colemak-DHm
 
-=======
-# This is a **work in progress** fork of a fork, check back later. When this text is removed, it is ready for use.
+# This fork of a fork is kind of *usable*. It works as intended, it just needs more remaps to do. But anyways, remaps are not included in the plugin and have to be written in config as g:colemak_dhm_mappings (see below).
 
 ## Simple setup
 Define this in the vimrc runtime stream prior to plugin loading (plugins run after vimrc by default)
