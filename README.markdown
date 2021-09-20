@@ -24,19 +24,6 @@ let g:colemak_dhm_mappings = {
 \        'shift_i': {'dhm': 'I', 'original': '<nop>'}
 \}
 
-" Tells the plugin to map once it loads
-" Using system command to check if colemak layout is present.
-" TODO: check if variant is colemak.
-let g:colemak_dhm_automap = system("setxkbmap -query | grep -c variant")
-
-" Need to define these so mappings in downstream vimrc can map
-let bind_to = g:colemak_dhm_automap ? 'dhm' : 'original'
-let g:left  = get(g:colemak_dhm_mappings.left, bind_to)
-let g:right  = get(g:colemak_dhm_mappings.right, bind_to)
-let g:down  = get(g:colemak_dhm_mappings.down, bind_to)
-let g:up  = get(g:colemak_dhm_mappings.up, bind_to)
-```
-
 Install
 -------
 
