@@ -3,6 +3,7 @@
 This **fork of a fork** is kind of *usable*. It works as intended, it just needs more remaps to do. But anyways, remaps are **not** included in the plugin and have to be written in config as `g:colemak_dhm_mappings` (see below).
 
 ## Simple setup
+
 Define this in the vimrc runtime stream prior to plugin loading (plugins run after vimrc by default)
 ```vim
 " Need to define prior to plugin load or include in plugin
@@ -31,3 +32,6 @@ let g:colemak_dhm_mappings = {
 3. Run `vim +PlugInstall`
 4. You probably want to load vim-colemak last.
 
+# Licence
+
+Distributed under the same terms as Vim itself. See `:help license`.
