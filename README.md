@@ -23,6 +23,7 @@ let g:colemak_dhm_mappings = {
 \        'shift_i': {'dhm': 'I', 'original': '<nop>'},
 \}
 ```
+If you want to add your mappings, just give it a `'name': {'dhm' '<Key_to_use>', 'original': '<original_key>'}`
 
 # Install
 
