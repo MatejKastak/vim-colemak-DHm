@@ -15,12 +15,12 @@ let g:colemak_dhm_mappings = {
 \        'up': {'dhm': 'e', 'original': 'k'},
 \        'insert': {'dhm': 'u', 'original': 'i'},
 \        'undo': {'dhm': 'l', 'original': 'u'},
-\        'next': {'dhm': 'h', 'original': 'n'},
-\        'previous': {'dhm': 'H', 'original': 'N'},
-\        'mark': {'dhm': 'k', 'original': 'm'},
-\        'top_screen': {'dhm': 'K', 'original': 'H'},
+\        'next': {'dhm': 'k', 'original': 'n'},
+\        'previous': {'dhm': 'K', 'original': 'N'},
+\        'mark': {'dhm': 'm', 'original': 'm'},
+\        'top_screen': {'dhm': 'M', 'original': 'H'},
 \        'join': {'dhm': 'N', 'original': 'J'},
-\        'shift_i': {'dhm': 'I', 'original': '<nop>'}
+\        'shift_i': {'dhm': 'I', 'original': '<nop>'},
 \}
 ```
 
