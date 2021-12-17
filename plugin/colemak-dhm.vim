@@ -5,7 +5,26 @@
     if v:version < 700 | echohl WarningMsg | echo "colemak-dhm.vim: You need Vim version 7.0 or later." | echohl None | finish | endif
 " }}}
 
-let g:colemak_dhm_automap = system("setxkbmap -query | grep -c variant")
+" let g:colemak_dhm_automap = system("setxkbmap -query | grep -c variant")
+let g:colemak_dhm_automap = 1
+
+
+" Need to define prior to plugin load or include in plugin
+" Defined here first so can get mappings for downstream vimrc
+let g:colemak_dhm_mappings = {
+\        'left': {'dhm': 'm', 'original': 'h'},
+\        'right': {'dhm': 'i', 'original': 'l'},
+\        'down': {'dhm': 'n', 'original': 'j'},
+\        'up': {'dhm': 'e', 'original': 'k'},
+\        'insert': {'dhm': 'u', 'original': 'i'},
+\        'undo': {'dhm': 'l', 'original': 'u'},
+\        'next': {'dhm': 'k', 'original': 'n'},
+\        'previous': {'dhm': 'K', 'original': 'N'},
+\        'mark': {'dhm': 'm', 'original': 'm'},
+\        'top_screen': {'dhm': 'M', 'original': 'H'},
+\        'join': {'dhm': 'N', 'original': 'J'},
+\        'shift_i': {'dhm': 'I', 'original': '<nop>'},
+\}
 
 " Need to define these so mappings in downstream vimrc can map
 let bind_to = g:colemak_dhm_automap ? 'dhm' : 'original'
@@ -21,7 +40,7 @@ let g:colemak_dhm_visual = [
 \   'up',
 \]
 
-let g:colemak_mappings_on = 0
+let g:colemak_mappings_on = 1
 
 function! MapDHM()
     let g:colemak_mappings_on = 1
